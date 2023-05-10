@@ -1,0 +1,6 @@
+openpyxl==3.0.7
+selenium==3.141.0
+axe-selenium-python==3.6.3
+smtplib
+zipfile
+datetime
