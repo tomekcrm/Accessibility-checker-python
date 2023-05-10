@@ -62,7 +62,7 @@ To access previous reports, follow the steps below:
 
 4. Open `http://<IP_address>:5000` in your web browser, where `<IP_address>` is the IP address of your server. You should see links to all the `report*.zip` files.
 
-   **Note:** The `report*.zip` files must be located in the same directory as the `run-flask.py` file.
+   **Note:** The `report*.zip` files must be located in the same directory as the `run-flask.py` file. If the program does not find any reports, it will display the message `'No reports to show'`.
 
 Make sure that the `run-flask.py` file and the `report*.zip` files are located in the same directory, and that the IP address of your server is correctly set in the `SERVER_IP` variable. After following the above steps, you should be able to access all the previous reports.
 
