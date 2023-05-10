@@ -18,6 +18,7 @@ Before running the tool, you will need to install the following dependencies:
   - Firefox: https://github.com/mozilla/geckodriver/releases
   - Chrome: https://sites.google.com/a/chromium.org/chromedriver/downloads
   - After downloading the web driver, make sure that the driver executable is in your system PATH.
+- If you want to get access to previous reporst, fallow #Access to previous reports --> below
 
   You can use requirements.txt from this repositories
 
@@ -35,6 +36,37 @@ To use the tool, follow these steps:
 3. Run the tool by executing the run.py script with Python: ```python run.py```.
 4. The tool will then start checking each web page in the Excel file and generate a detailed accessibility report for each page. The reports will be saved in a subdirectory called "pages" and a summary of the results will be saved in an Excel file called "results.xlsx".
 5. If you choose to send the report by email, the tool will prompt you to enter the email address where you want to receive the report. The report will be sent as a ZIP file attachment.
+
+
+## Access to previous reports
+
+To access previous reports, follow the steps below:
+
+1. Install the Flask library:
+
+   ```bash
+   $ pip install Flask
+   ```
+
+2. Set the `SERVER_IP` environment variable to the IP address of your server:
+
+   ```bash
+   $ export SERVER_IP=<IP_address>
+   ```
+
+3. Run the Flask server by running the `run-flask.py` file:
+
+   ```bash
+   $ python run-flask.py
+   ```
+
+4. Open `http://<IP_address>:5000` in your web browser, where `<IP_address>` is the IP address of your server. You should see links to all the `report*.zip` files.
+
+   **Note:** The `report*.zip` files must be located in the same directory as the `run-flask.py` file.
+
+Make sure that the `run-flask.py` file and the `report*.zip` files are located in the same directory, and that the IP address of your server is correctly set in the `SERVER_IP` variable. After following the above steps, you should be able to access all the previous reports.
+
+
 
 ## Acknowledgements
 
