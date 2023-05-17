@@ -6,7 +6,6 @@ The tool uses the axe_selenium_python library to perform automated accessibility
 
 The tool generates a detailed accessibility report for each page and saves the results in a ZIP file along with an Excel file summarizing the results.
 
-
 ## Installation
 
 Before running the tool, you will need to install the following dependencies:
